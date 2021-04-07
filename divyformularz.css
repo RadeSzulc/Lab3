@@ -1,2 +1,2 @@
-#strona {color: white; background-color: black;}
-#formularz {text-align: center; align-items: center;} 
+#strona {color: white; background-color: black; height: 100%;}
+#formularz {text-align: center; align-items: center; height: 100%;} 
