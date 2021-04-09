@@ -6,7 +6,7 @@
     <title>Zadanie3</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='divyformularz.css'>
-    <script defer src='skrypty.js'></script>
+    <script src='skrypty.js'></script>
 </head>
 <body>
     <div id="strona">
@@ -22,11 +22,14 @@
         <label for="userMail"> Adres e-mail:</label>
         <input type="text" id="userMail" name="userMail" value=""/>
     
-        <p><input type="submit" value="Wyślij"></p>
-
-        <input type="reset" value="wyczyść formularz">
+        <p><button type="button" id="button" onclick="sprawdźDane(userName.value, userSurname.value, userMail.value)">Sprawdź dane</button></p>
+        
+        <input type="reset" value="Wyczyść formularz">
     </form>
     </div>
+    
+    <p>Podaj liczby: <input type="text" id="userMail" name="userMail" value=""/></p>
+    
     </div>
 </body>
 </html>
