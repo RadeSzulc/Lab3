@@ -11,25 +11,47 @@
 <body>
     <div id="strona">
     <div id="formularz">
-
+<p>Formularz:</p>
     <form action="..." method="post">
         <label for="userName">Imię:</label>
-        <input type="text" id="userName" name="userName" value=""/>
+        <input type="text" id="userName" name="userName"/>
     
         <p><label for="userSurname">Nazwisko:</label>
-        <input type="text" id="userSurname" name="userSurname" value=""/></p>
+        <input type="text" id="userSurname" name="userSurname"/></p>
    
         <label for="userMail"> Adres e-mail:</label>
-        <input type="text" id="userMail" name="userMail" value=""/>
+        <input type="text" id="userMail" name="userMail"/>
     
-        <p><button type="button" id="button" onclick="sprawdźDane(userName.value, userSurname.value, userMail.value)">Sprawdź dane</button></p>
+        <p><button type="button" id="button1" onclick="sprawdźDane(userName.value, userSurname.value, userMail.value)">Sprawdź dane</button></p>
         
         <input type="reset" value="Wyczyść formularz">
     </form>
     </div>
+
     
-    <p>Podaj liczby: <input type="text" id="userMail" name="userMail" value=""/></p>
     
+    <div id="skrypty">
+        <p>Skrypty</p>
+    <p>Podaj liczby, aby znaleźć największą z nich: <input type="text" id="liczby"></input></p>
+    <button type="button" id="button2" onclick="najwieksza(liczby.value)">Znajdź największą liczbę</button>
+
+    <p>Podaj numer elementu ciągu Fibonacciego: <input type="number" id="liczba"></input></p>
+    <button type="button" id="button3" onclick="fibonacci(liczba.value)">Oblicz</button>
+
+    <p>Podaj pierwszą liczbę do obliczenia NWD: <input type="text" id="NWD1"></input></p>
+    <p>Podaj drugą liczbę do obliczenia NWD: <input type="text" id="NWD2"></input></p>
+    <button type="button" id="button4" onclick="nwd(NWD1.value, NWD2.value)">Znajdź NWD</button>
     </div>
+    
+    <div id="wyniki">
+        Wyniki:
+        <p id="wynikMaksimum"></p>
+        <p id="wynikFibonacci"></p>
+        <p id="wynikNwd"></p>
+    </div>
+
+
+
+</div>
 </body>
 </html>
