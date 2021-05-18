@@ -24,7 +24,7 @@ function sprawdźDane(userName, userSurname, userMail) {
 
 function najwieksza(liczby)
 {
-    const reLiczby = /^\d+$/;
+    const reLiczby = /^\d \d \d \d \d \d \d/;
     if(reLiczby.test(liczby)){
     const liczba = [];
     var max=0;
